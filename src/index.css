@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+li,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 50px;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #4671d5;
+}
+.logo-appear {
+  transform: translateX(-100%);
+}
+.logo-appear-active {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+.error {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background-color: #e60042;
+  color: white;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 24px 8px rgba(34, 60, 80, 0.2);
+}
+.error-enter {
+  transform: translateX(100%);
+}
+.error-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+.error-exit {
+  transform: translateX(0);
+}
+.error-exit-active {
+  transform: translateX(100%);
+  transition: transform 500ms linear;
+}
+.addForm {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  width: 400px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 4px 12px 7px rgba(34, 60, 80, 0.2);
+}
+.nameInp {
+  margin-bottom: 10px;
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+.nameInp:focus {
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  border: 1px solid #4671d5;
+}
+.numberInp {
+  margin-bottom: 10px;
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+.numberInp:focus {
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  border: 1px solid #4671d5;
+}
+.btnSub {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #4671d5;
+  box-shadow: 0px 4px 9px -1px rgba(34, 60, 80, 0.2);
+}
+.btnSub:hover {
+  background-color: #6d87d6;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+.filter {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  width: 400px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 4px 12px 7px rgba(34, 60, 80, 0.2);
+}
+.textFilter {
+  margin-bottom: 10px;
+}
+.filterInp {
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+.filterInp:focus {
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  border: 1px solid #4671d5;
+}
+.TaskList-item {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 4px 12px 7px rgba(34, 60, 80, 0.2);
+}
+.TaskList-item:not(:last-child) {
+  margin-bottom: 3px;
+}
+.TaskList-item-enter {
+  transform: translateX(-30%);
+}
+.TaskList-item-enter-active {
+  transform: translateX(0);
+  transition: all 250ms linear;
+}
+.TaskList-item-exit {
+  transform: translateX(0);
+}
+.TaskList-item-exit-active {
+  transform: translateX(-30%);
+  transition: all 250ms linear;
+}
+.btndel {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #e60042;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.icondel {
+  fill: #2196f3;
+  height: 100%;
+  width: 100%;
+}
